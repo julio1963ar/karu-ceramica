@@ -1,168 +1,189 @@
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
  
-body{
-font-family:'Poppins',sans-serif;
-background:#faf8f2;
-color:#444;
+body {
+font-family: Arial, sans-serif;
+background-color: #faf8f2;
+color: #444;
 }
  
-.hero{
-background:#f5f0df;
-padding-bottom:40px;
+.hero {
+background-color: #f5f0df;
+padding: 20px;
 }
  
-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 40px;
+nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
 }
  
-.logo{
-width:120px;
-border-radius:50%;
+.logo {
+width: 120px;
+border-radius: 50%;
 }
  
-.menu{
-display:flex;
-gap:20px;
+.menu {
+display: flex;
+gap: 20px;
 }
  
-.menu a{
-text-decoration:none;
-color:#555;
-font-weight:600;
+.menu a {
+text-decoration: none;
+color: #56613f;
+font-weight: bold;
 }
  
-.hero-content{
-text-align:center;
-padding:40px 20px;
+.hero-content {
+text-align: center;
+padding: 40px 20px;
 }
  
-.hero-content h1{
-font-size:3rem;
-margin-bottom:10px;
+.hero-content h1 {
+font-size: 3rem;
+color: #56613f;
+margin-bottom: 15px;
 }
  
-.hero-content p{
-font-size:1.1rem;
-margin-bottom:25px;
+.hero-content p {
+font-size: 1.2rem;
+margin-bottom: 20px;
 }
  
-.btn-principal{
-background:#d8df99;
-color:#333;
-text-decoration:none;
-padding:14px 28px;
-border-radius:25px;
-font-weight:bold;
+.btn-principal {
+display: inline-block;
+background-color: #d8df99;
+color: #333;
+text-decoration: none;
+padding: 12px 24px;
+border-radius: 25px;
+font-weight: bold;
 }
  
-.busqueda{
-padding:40px 20px;
-text-align:center;
+.btn-principal:hover {
+background-color: #c7d07f;
 }
  
-#buscador{
-width:500px;
-max-width:90%;
-padding:12px;
-border-radius:10px;
-border:1px solid #ccc;
+.busqueda {
+text-align: center;
+padding: 40px 20px;
 }
  
-#categorias{
-margin-top:20px;
+#buscador {
+width: 90%;
+max-width: 500px;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 8px;
 }
  
-.filtro{
-background:#d8df99;
-border:none;
-margin:5px;
-padding:10px 15px;
-border-radius:20px;
-cursor:pointer;
+#categorias {
+margin-top: 20px;
 }
  
-.grid-productos{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:25px;
-padding:25px;
+.filtro {
+background-color: #d8df99;
+border: none;
+border-radius: 20px;
+padding: 10px 15px;
+margin: 5px;
+cursor: pointer;
+font-weight: bold;
 }
  
-.card{
-background:white;
-border-radius:15px;
-overflow:hidden;
-box-shadow:0 4px 15px rgba(0,0,0,.1);
+.filtro:hover {
+background-color: #c7d07f;
 }
  
-.card img{
-width:100%;
-height:250px;
-object-fit:cover;
+.grid-productos {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 20px;
+padding: 30px;
 }
  
-.info{
-padding:20px;
+.card {
+background: white;
+border-radius: 15px;
+overflow: hidden;
+box-shadow: 0 3px 10px rgba(0,0,0,0.15);
 }
  
-.info h3{
-margin-bottom:10px;
+.card img {
+width: 100%;
+height: 250px;
+object-fit: cover;
 }
  
-.categoria{
-color:#888;
-font-size:.9rem;
+.info {
+padding: 20px;
 }
  
-.precio{
-color:#2f7d32;
-font-size:1.4rem;
-font-weight:bold;
-margin:10px 0;
+.info h3 {
+margin-bottom: 10px;
 }
  
-.stock{
-margin-top:10px;
+.categoria {
+color: #777;
+margin-bottom: 10px;
 }
  
-.btn-whatsapp{
-display:block;
-text-align:center;
-background:#25D366;
-color:white;
-text-decoration:none;
-padding:12px;
-border-radius:10px;
-margin-top:15px;
+.precio {
+font-size: 1.5rem;
+color: #2f7d32;
+font-weight: bold;
+margin-bottom: 10px;
 }
  
-footer{
-text-align:center;
-padding:40px;
-background:#f5f0df;
-margin-top:30px;
+.stock {
+margin-top: 10px;
 }
  
-@media(max-width:700px){
- 
-nav{
-flex-direction:column;
-gap:20px;
+.btn-whatsapp {
+display: block;
+text-align: center;
+background-color: #25D366;
+color: white;
+text-decoration: none;
+padding: 12px;
+margin-top: 15px;
+border-radius: 8px;
+font-weight: bold;
 }
  
-.menu{
-flex-wrap:wrap;
-justify-content:center;
+.btn-whatsapp:hover {
+background-color: #1ebf5f;
 }
  
-.hero-content h1{
-font-size:2.2rem;
+footer {
+background-color: #f5f0df;
+text-align: center;
+padding: 30px;
+margin-top: 40px;
+}
+ 
+footer a {
+color: #56613f;
+text-decoration: none;
+}
+ 
+@media (max-width: 768px) {
+ 
+nav {
+flex-direction: column;
+gap: 15px;
+}
+ 
+.menu {
+justify-content: center;
+flex-wrap: wrap;
+}
+ 
+.hero-content h1 {
+font-size: 2rem;
 }
 }
